@@ -1,9 +1,9 @@
+"use client";
 import React from "react";
+import Link from "next/link";
 import LightRays from "@/components/background/LightRays/LightRays";
 import TextType from "@/components/bloc/TextAnimations/TextType/TextType";
 import { HiAcademicCap } from "react-icons/hi2";
-
-
 
 const Hero = () => {
   return (
@@ -31,9 +31,14 @@ const Hero = () => {
         </h1>
 
         <div className="flex gap-4">
-          <button className="bg-white text-black rounded-full px-6 py-3 font-semibold hover:bg-gray-200 transition">
-            View My Work
-          </button>
+          {/* Button with Link */}
+          <Link href="/projects">
+            <button className="bg-white text-black rounded-full px-6 py-3 font-semibold hover:bg-gray-200 transition">
+              View My Work
+            </button>
+          </Link>
+
+          {/* Resume Button */}
           <button className="bg-gray-900 text-white border border-gray-600 rounded-full px-6 py-3 font-semibold hover:bg-gray-800 transition flex items-center gap-2">
             <HiAcademicCap className="text-lg" />
             Resume
