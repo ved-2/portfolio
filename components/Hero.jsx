@@ -9,7 +9,15 @@ const Hero = () => {
   return (
     <div>
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <LightRays />
+        <LightRays
+          raysOrigin="top"
+          raysSpeed={1.5}
+          lightSpread={1.8}
+          rayLength={3}
+          fadeDistance={1}
+          saturation={1}
+          mouseInfluence={0.1}
+        />
       </div>
 
       {/* Hero Section */}
