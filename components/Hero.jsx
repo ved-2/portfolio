@@ -11,11 +11,11 @@ const Hero = () => {
       <div className="absolute inset-0 z-0 pointer-events-none">
         <LightRays
           raysOrigin="top"
-          raysSpeed={1.5}
-          lightSpread={1.8}
-          rayLength={3}
-          fadeDistance={1}
-          saturation={1}
+          raysSpeed={1.2}
+          lightSpread={0.5}
+          rayLength={1.2}
+          fadeDistance={10}
+          saturation={0}
           mouseInfluence={0.1}
         />
       </div>
