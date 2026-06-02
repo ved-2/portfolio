@@ -2,7 +2,7 @@
 
 import React from "react";
 import CardSwap, { Card } from "./bloc/Components/CardSwap/CardSwap";
-import LogoLoop from "./LogoLoop";
+import LogoLoop from "./(components)/LogoLoop";
 
 // Icons
 import {

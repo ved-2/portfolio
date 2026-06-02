@@ -1,17 +1,132 @@
+"use client";
+
 import React from "react";
-import FuzzyText from "./bloc/TextAnimations/FuzzyText/FuzzyText";
+import Link from "next/link";
+import { PinContainer } from "./ui/3d-pin";
 
-const Projects = () => {
+const projects = [
+  {
+    title: "HostelNest",
+    emoji: "🏠",
+    category: "PropTech",
+    description:
+      "AI-powered student accommodation platform with roommate matching and smart property discovery.",
+    href: "/projects",
+    gradient: "from-orange-500 via-red-500 to-pink-500",
+  },
+  {
+    title: "Krishi Mitra",
+    emoji: "🌾",
+    category: "AgriTech",
+    description:
+      "AI farming companion offering crop advisory, pest detection, and market intelligence.",
+    href: "/projects",
+    gradient: "from-green-500 via-emerald-500 to-lime-500",
+  },
+  {
+    title: "HospiConnect",
+    emoji: "🚑",
+    category: "HealthTech",
+    description:
+      "Real-time healthcare coordination platform connecting patients, ambulances, and hospitals.",
+    href: "/projects",
+    gradient: "from-red-500 via-pink-500 to-rose-500",
+  },
+  {
+    title: "Credify",
+    emoji: "💳",
+    category: "FinTech",
+    description:
+      "AI-powered financial health platform for debt optimization and tax planning.",
+    href: "/projects",
+    gradient: "from-cyan-500 via-blue-500 to-indigo-500",
+  },
+  {
+    title: "DPRConnect",
+    emoji: "🏛️",
+    category: "GovTech",
+    description:
+      "AI-powered DPR assessment and project risk prediction system for smarter governance.",
+    href: "/projects",
+    gradient: "from-purple-500 via-violet-500 to-indigo-500",
+  },
+  {
+    title: "Algo Animate",
+    emoji: "🎯",
+    category: "EdTech",
+    description:
+      "AI-powered DSA learning platform with optimized solutions and visual explanations.",
+    href: "/projects",
+    gradient: "from-yellow-500 via-orange-500 to-red-500",
+  },
+];
+
+export default function ProjectsSection() {
   return (
-    <div className="min-h-screen pt-30">
-      <h1 className="text-4xl font-bold text-center">Projects</h1>
-      <div className="flex flex-1 items-center justify-center pt-40">
-        <FuzzyText baseIntensity={0.2} hoverIntensity={0.5} enableHover={true}>
-          ADDING SOON
-        </FuzzyText>
-      </div>
-    </div>
-  );
-};
+    <section id="projects" className="py-32 px-6 max-w-7xl mx-auto">
+      {/* Heading */}
+      <div className="text-center mb-20">
+        <span className="text-violet-400 uppercase tracking-[0.3em] text-sm">
+          Featured Work
+        </span>
 
-export default Projects;
+        <h2 className="mt-4 text-5xl md:text-6xl font-bold text-white">
+          Products I've Built
+        </h2>
+
+        <p className="mt-6 max-w-3xl mx-auto text-zinc-400 text-lg">
+          From AI-powered platforms and hackathon-winning solutions to products
+          solving real-world problems across Healthcare, FinTech, AgriTech,
+          GovTech, and Education.
+        </p>
+      </div>
+
+      {/* Cards */}
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-12 gap-y-32 justify-items-center">
+        {projects.map((project) => (
+          <PinContainer
+            key={project.title}
+            title={project.category}
+            href={project.href}
+          >
+            <div className="flex flex-col p-5 w-[22rem] h-[22rem] bg-black border border-zinc-800 rounded-2xl backdrop-blur-xl">
+              {/* Emoji */}
+              <div className="text-5xl mb-4">{project.emoji}</div>
+
+              {/* Title */}
+              <h3 className="text-white text-2xl font-bold">{project.title}</h3>
+
+              {/* Category */}
+              <p className="text-violet-400 text-sm mt-1">{project.category}</p>
+
+              {/* Description */}
+              <p className="text-zinc-400 mt-4 text-sm leading-relaxed">
+                {project.description}
+              </p>
+
+              {/* Gradient Preview */}
+              <div
+                className={`h-60 rounded-xl mt-6 bg-gradient-to-br ${project.gradient} opacity-90`}
+              />
+
+              {/* Footer */}
+              <div className="mt-4 text-white text-sm font-medium">
+                View Project →
+              </div>
+            </div>
+          </PinContainer>
+        ))}
+      </div>
+
+      {/* CTA */}
+      <div className="flex justify-center mt-20">
+        <Link
+          href="/projects"
+          className="px-8 py-4 rounded-full border border-zinc-700 hover:border-violet-500 transition-all duration-300 text-white"
+        >
+          Explore All Projects →
+        </Link>
+      </div>
+    </section>
+  );
+}

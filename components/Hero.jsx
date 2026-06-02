@@ -4,9 +4,9 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import TextType from "@/components/bloc/TextAnimations/TextType/TextType";
 import { HiAcademicCap } from "react-icons/hi2";
-import LightPillar from "./LightPillar";
-import Lightning from "./Lightning";
-import TrueFocus from "./TrueFocus";
+import LightPillar from "./(components)/LightPillar";
+import Lightning from "./(components)/Lightning";
+import TrueFocus from "./(components)/TrueFocus";
 
 const Hero = () => {
   return (
