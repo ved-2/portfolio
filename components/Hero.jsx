@@ -35,7 +35,7 @@ const Hero = () => {
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center">
         <p className="text-xs uppercase tracking-[0.35em] text-gray-500 mb-3">
-          Scroll to findme
+          Scroll to know me!
         </p>
 
         <div className="animate-bounce">
