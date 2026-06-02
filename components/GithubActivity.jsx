@@ -2,6 +2,7 @@
 
 import React from "react";
 import dynamic from "next/dynamic";
+import { Terminal } from "./ui/terminal";
 
 const GitHubCalendar = dynamic(
   () => import("react-github-calendar").then((mod) => mod.GitHubCalendar),
@@ -39,24 +40,50 @@ const GithubActivity = () => {
 
         {/* Github Stats */}
         <div className="grid md:grid-cols-2 gap-6 mb-16">
-          <div className="rounded-3xl border border-white/10 bg-black p-8 font-mono">
-            <p className="text-violet-400">ved@portfolio:~$</p>
+          <div className="rounded-3xl  border-white/10 bg-black overflow-hidden">
+            <Terminal
+              commands={[
+                "whoami",
+                "skills",
+                "featured_projects",
+                "achievements",
+                "current_goal",
+              ]}
+              outputs={{
+                0: ["Vedant Kolte", "AI Engineer • Full Stack Developer"],
 
-            <p className="text-white mt-3">whoami</p>
+                1: [
+                  "Python",
+                  "Java",
+                  "JavaScript",
+                  "Machine Learning",
+                  "GenAI",
+                  "RAG",
+                  "LangChain",
+                  "Next.js",
+                  "Flutter",
+                ],
 
-            <p className="text-violet-200 mt-2">AI Engineer in progress.</p>
+                2: [
+                  "🚀 Aurenix AI",
+                  "🏠 HostelNest",
+                  "🌾 Krishi Mitra",
+                  "🚑 HospiConnect",
+                  "💳 Credify",
+                ],
 
-            <p className="text-white mt-5">current_focus</p>
+                3: [
+                  "🥇 AI Summit 2025 Winner",
+                  "🏆 Prayatna 3.0 Excellence Award",
+                  "🥈 Vyoma National Prototype Competition",
+                  "🥈 5th Regional Project Conclave",
+                ],
 
-            <p className="text-neutral-400 mt-2">
-              AI • Full Stack • Product Building
-            </p>
-
-            <p className="text-white mt-5">mission</p>
-
-            <p className="text-neutral-400 mt-2">
-              Build products that people actually use.
-            </p>
+                4: ["Building AI products that solve real-world problems."],
+              }}
+              typingSpeed={35}
+              delayBetweenCommands={1000}
+            />
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-4">
