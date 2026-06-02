@@ -11,7 +11,7 @@ const projects = [
     category: "PropTech",
     description:
       "AI-powered student accommodation platform with roommate matching and smart property discovery.",
-    href: "/projects",
+    href: "/projects/hostelnest",
     gradient: "from-orange-500 via-red-500 to-pink-500",
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     category: "AgriTech",
     description:
       "AI farming companion offering crop advisory, pest detection, and market intelligence.",
-    href: "/projects",
+    href: "/projects/krishi-mitra",
     gradient: "from-green-500 via-emerald-500 to-lime-500",
   },
   {
@@ -29,7 +29,7 @@ const projects = [
     category: "HealthTech",
     description:
       "Real-time healthcare coordination platform connecting patients, ambulances, and hospitals.",
-    href: "/projects",
+    href: "/projects/hospiconnect",
     gradient: "from-red-500 via-pink-500 to-rose-500",
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     category: "FinTech",
     description:
       "AI-powered financial health platform for debt optimization and tax planning.",
-    href: "/projects",
+    href: "/projects/credify",
     gradient: "from-cyan-500 via-blue-500 to-indigo-500",
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     category: "GovTech",
     description:
       "AI-powered DPR assessment and project risk prediction system for smarter governance.",
-    href: "/projects",
+    href: "/projects/dprconnect",
     gradient: "from-purple-500 via-violet-500 to-indigo-500",
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     category: "EdTech",
     description:
       "AI-powered DSA learning platform with optimized solutions and visual explanations.",
-    href: "/projects",
+    href: "/projects/algo-animate",
     gradient: "from-yellow-500 via-orange-500 to-red-500",
   },
 ];

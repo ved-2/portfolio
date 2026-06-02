@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { LinkPreview } from "./ui/link-preview";
 
 const Aboutme = () => {
   return (
@@ -50,6 +51,15 @@ const Aboutme = () => {
               <div>
                 <h3 className="text-3xl font-bold">AI</h3>
                 <p className="text-gray-500">Focused Learning</p>
+              </div>
+              <div>
+                <LinkPreview
+                  url="https://drive.google.com/file/d/180xk-AXkxQDwd1_CV_fAsDImGbYka4td/view?usp=sharing"
+                  className="text-3xl font-bold text-white"
+                >
+                  Resume
+                </LinkPreview>
+                <p className="text-gray-500">Check it out!</p>
               </div>
             </div>
           </div>

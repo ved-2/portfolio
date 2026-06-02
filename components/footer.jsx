@@ -91,11 +91,49 @@ export default function Footer() {
             <h4 className="font-bold mb-5 text-white">Featured Projects</h4>
 
             <div className="space-y-3 text-zinc-400">
-              <p>🏠 HostelNest</p>
-              <p>🌾 Krishi Mitra</p>
-              <p>🚑 HospiConnect</p>
-              <p>💳 Credify</p>
-              <p>🏛️ DPRConnect</p>
+              <div className="space-y-2">
+                <Link
+                  href="/projects/hostelnest"
+                  className="block hover:text-orange-400 transition"
+                >
+                  🏠 HostelNest
+                </Link>
+
+                <Link
+                  href="/projects/krishi-mitra"
+                  className="block hover:text-green-400 transition"
+                >
+                  🌾 Krishi Mitra
+                </Link>
+
+                <Link
+                  href="/projects/hospiconnect"
+                  className="block hover:text-red-400 transition"
+                >
+                  🚑 HospiConnect
+                </Link>
+
+                <Link
+                  href="/projects/credify"
+                  className="block hover:text-cyan-400 transition"
+                >
+                  💳 Credify
+                </Link>
+
+                <Link
+                  href="/projects/dprconnect"
+                  className="block hover:text-violet-400 transition"
+                >
+                  🏛️ DPRConnect
+                </Link>
+
+                <Link
+                  href="/projects/algo-animate"
+                  className="block hover:text-yellow-400 transition"
+                >
+                  🎯 Algo Animate
+                </Link>
+              </div>
             </div>
           </div>
 
