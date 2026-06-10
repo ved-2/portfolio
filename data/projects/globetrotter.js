@@ -22,21 +22,14 @@ export const globeTrotter = {
   description:
     "GlobeTrotter is an intelligent travel planning platform designed to simplify trip organization and decision-making. Instead of spending hours researching destinations, accommodations, transportation, and attractions, users can generate complete travel plans tailored to their interests, budget, and travel style.",
 
-  coverImage: "/projects/globetrotter/cover.png",
+  coverImage: "/projects/globetrotter/1.jpg",
 
-  heroImage: "/projects/globetrotter/hero.png",
+  heroImage: "/projects/globetrotter/1.jpg",
 
-  gallery: [
-    "/projects/globetrotter/1.png",
-    "/projects/globetrotter/2.png",
-    "/projects/globetrotter/3.png",
-    "/projects/globetrotter/4.png",
-    "/projects/globetrotter/5.png",
-  ],
+  gallery: ["/projects/globetrotter/1.jpg", "/projects/globetrotter/2.jpg"],
 
   github: {
-    repository:
-      "https://github.com/ved-2/globe-trotter-odoo",
+    repository: "https://github.com/ved-2/globe-trotter-odoo",
   },
 
   liveDemo: null,
@@ -44,9 +37,7 @@ export const globeTrotter = {
   team: {
     name: "Hackathon Team",
 
-    members: [
-      "Vedant Kolte",
-    ],
+    members: ["Vedant Kolte"],
   },
 
   duration: "Hackathon Development",
@@ -157,30 +148,13 @@ export const globeTrotter = {
   },
 
   techStack: {
-    frontend: [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "Shadcn UI",
-    ],
+    frontend: ["Next.js", "React", "Tailwind CSS", "Shadcn UI"],
 
-    backend: [
-      "Node.js",
-      "Express.js",
-    ],
+    backend: ["Node.js", "Express.js"],
 
-    ai: [
-      "Gemini AI",
-      "Recommendation Engine",
-      "Prompt Engineering",
-    ],
+    ai: ["Gemini AI", "Recommendation Engine", "Prompt Engineering"],
 
-    tools: [
-      "Maps API",
-      "Travel Data APIs",
-      "Authentication",
-      "Cloud Storage",
-    ],
+    tools: ["Maps API", "Travel Data APIs", "Authentication", "Cloud Storage"],
   },
 
   responsibilities: [
@@ -278,8 +252,7 @@ export const globeTrotter = {
   ],
 
   seo: {
-    title:
-      "GlobeTrotter - AI Travel Planning Platform",
+    title: "GlobeTrotter - AI Travel Planning Platform",
 
     description:
       "AI-powered travel planning platform that generates personalized itineraries, destination recommendations, budget estimates, and intelligent travel insights.",

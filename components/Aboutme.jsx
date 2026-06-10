@@ -54,7 +54,7 @@ const Aboutme = () => {
               </div>
               <div>
                 <LinkPreview
-                  url="https://drive.google.com/file/d/180xk-AXkxQDwd1_CV_fAsDImGbYka4td/view?usp=sharing"
+                  url="https://drive.google.com/file/d/1N2MN8TqXKP117qIUNqLKDCU1ZZ4b9oVH/view?usp=sharing"
                   className="text-3xl font-bold text-white"
                 >
                   Resume

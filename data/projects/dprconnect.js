@@ -35,8 +35,7 @@ export const dprconnect = {
   ],
 
   github: {
-    frontend: "YOUR_REPO_URL",
-    backend: "YOUR_REPO_URL",
+    repository: "https://github.com/ved-2/dpr_quality",
   },
 
   liveDemo: null,
@@ -163,28 +162,11 @@ export const dprconnect = {
   },
 
   techStack: {
-    frontend: [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "Shadcn UI",
-      "Flutter",
-    ],
+    frontend: ["Next.js", "React", "Tailwind CSS", "Shadcn UI", "Flutter"],
 
-    backend: [
-      "FastAPI",
-      "Python",
-      "Supabase",
-      "PostgreSQL",
-    ],
+    backend: ["FastAPI", "Python", "Supabase", "PostgreSQL"],
 
-    ai: [
-      "BERT",
-      "spaCy",
-      "XGBoost",
-      "NLP",
-      "Risk Prediction Models",
-    ],
+    ai: ["BERT", "spaCy", "XGBoost", "NLP", "Risk Prediction Models"],
 
     tools: [
       "Google OCR",
@@ -295,8 +277,7 @@ export const dprconnect = {
   ],
 
   seo: {
-    title:
-      "DPRConnect - AI Powered DPR Quality Assessment Platform",
+    title: "DPRConnect - AI Powered DPR Quality Assessment Platform",
 
     description:
       "GovTech platform leveraging NLP, OCR, and machine learning to automate DPR evaluation, project risk prediction, bid validation, and project monitoring.",

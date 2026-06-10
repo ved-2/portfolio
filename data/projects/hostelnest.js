@@ -35,18 +35,16 @@ export const hostelnest = {
   ],
 
   github: {
-    frontend: "YOUR_REPO_URL",
-    backend: "YOUR_REPO_URL",
+    frontend: "PRIVATE",
+    backend: "PRIVATE",
   },
 
-  liveDemo: "YOUR_DEPLOYMENT_URL",
+  liveDemo: null,
 
   team: {
     name: "Aurenix AI",
 
-    members: [
-      "Vedant Kolte",
-    ],
+    members: ["Vedant Kolte"],
   },
 
   duration: "Ongoing",
@@ -166,22 +164,11 @@ export const hostelnest = {
       "Framer Motion",
     ],
 
-    backend: [
-      "Node.js",
-      "Prisma",
-      "PostgreSQL",
-    ],
+    backend: ["Node.js", "Prisma", "PostgreSQL"],
 
-    ai: [
-      "Gemini AI",
-      "Recommendation Engine",
-    ],
+    ai: ["Gemini AI", "Recommendation Engine"],
 
-    tools: [
-      "Clerk Authentication",
-      "Cloudinary",
-      "Vercel",
-    ],
+    tools: ["Clerk Authentication", "Cloudinary", "Vercel"],
   },
 
   responsibilities: [
@@ -279,8 +266,7 @@ export const hostelnest = {
   ],
 
   seo: {
-    title:
-      "HostelNest - AI Powered Student Housing Platform",
+    title: "HostelNest - AI Powered Student Housing Platform",
 
     description:
       "Student accommodation platform with AI roommate matching, verified listings, and intelligent housing recommendations.",

@@ -22,31 +22,28 @@ export const credify = {
   description:
     "Credify is an intelligent financial wellness platform designed to help users manage money more effectively. It provides debt analysis, financial health scoring, tax optimization, savings management, and AI-powered recommendations through a unified web and mobile experience.",
 
-  coverImage: "/projects/credify/cover.png",
+  coverImage: "/projects/credify/hero.png",
 
   heroImage: "/projects/credify/hero.png",
 
   gallery: [
-    "/projects/credify/1.png",
-    "/projects/credify/2.png",
-    "/projects/credify/3.png",
-    "/projects/credify/4.png",
-    "/projects/credify/5.png",
+    "/projects/credify/1.jpg",
+    "/projects/credify/2.jpg",
+    "/projects/credify/3.jpg",
+    "/projects/credify/4.jpg",
   ],
 
   github: {
-    web: "YOUR_REPO_URL",
-    mobile: "YOUR_REPO_URL",
+    web: "https://github.com/Krissh1102/credify-hack",
+    mobile: "https://github.com/Krissh1102/credify-hack",
   },
 
-  liveDemo: null,
+  liveDemo: "https://credify-hack.vercel.app/",
 
   team: {
     name: "Credify Team",
 
-    members: [
-      "Vedant Kolte",
-    ],
+    members: ["Vedant Kolte"],
   },
 
   duration: "Hackathon Development",
@@ -159,26 +156,11 @@ export const credify = {
   },
 
   techStack: {
-    frontend: [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "Shadcn UI",
-      "Flutter",
-    ],
+    frontend: ["Next.js", "React", "Tailwind CSS", "Shadcn UI", "Flutter"],
 
-    backend: [
-      "Node.js",
-      "PostgreSQL",
-      "Prisma ORM",
-      "Supabase",
-    ],
+    backend: ["Node.js", "PostgreSQL", "Prisma ORM", "Supabase"],
 
-    ai: [
-      "Gemini AI",
-      "CopilotKit",
-      "Financial Analytics Engine",
-    ],
+    ai: ["Gemini AI", "CopilotKit", "Financial Analytics Engine"],
 
     tools: [
       "Clerk Authentication",
@@ -284,8 +266,7 @@ export const credify = {
   ],
 
   seo: {
-    title:
-      "Credify - AI Powered Financial Health Platform",
+    title: "Credify - AI Powered Financial Health Platform",
 
     description:
       "Cross-platform financial wellness platform featuring debt optimization, tax planning, savings goals, and AI-powered financial recommendations.",

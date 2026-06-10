@@ -37,7 +37,8 @@ export const aurenixAI = {
     repository: "PRIVATE",
   },
 
-  liveDemo: "Chrome Web Store",
+  liveDemo:
+    "https://chromewebstore.google.com/detail/mceencokkodlhkaamldgfpdpcfkicdgn?utm_source=item-share-cb",
 
   team: {
     name: "Aurenix AI",
@@ -237,7 +238,7 @@ export const aurenixAI = {
       label: "Funding",
       value: "₹10,000",
     },
-    
+
     {
       label: "Awards Won",
       value: "3",

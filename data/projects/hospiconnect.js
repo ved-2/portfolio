@@ -41,7 +41,7 @@ export const hospiconnect = {
     ambulanceApp: "https://github.com/ved-2/hospi-connect",
   },
 
-  liveDemo: null,
+  liveDemo: "https://prayatna-3-0.vercel.app/",
 
   team: {
     name: "Neural Ninjas",

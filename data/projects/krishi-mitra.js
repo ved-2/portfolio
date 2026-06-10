@@ -35,18 +35,16 @@ export const krishiMitra = {
   ],
 
   github: {
-    web: "YOUR_REPO_URL",
-    mobile: "YOUR_REPO_URL",
+    web: "https://github.com/ved-2/krishi-mitra",
+    mobile: "https://github.com/ved-2/krishi-mitra",
   },
 
-  liveDemo: null,
+  liveDemo: "https://krishi-mitra-gilt.vercel.app/",
 
   team: {
     name: "Aurenix AI",
 
-    members: [
-      "Vedant Kolte",
-    ],
+    members: ["Vedant Kolte"],
   },
 
   duration: "Ongoing",
@@ -160,25 +158,11 @@ export const krishiMitra = {
   },
 
   techStack: {
-    frontend: [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "Flutter",
-    ],
+    frontend: ["Next.js", "React", "Tailwind CSS", "Flutter"],
 
-    backend: [
-      "Node.js",
-      "Express.js",
-      "Supabase",
-    ],
+    backend: ["Node.js", "Express.js", "Supabase"],
 
-    ai: [
-      "Gemini AI",
-      "LangChain",
-      "RAG",
-      "Plant Disease Detection",
-    ],
+    ai: ["Gemini AI", "LangChain", "RAG", "Plant Disease Detection"],
 
     tools: [
       "Weather APIs",
@@ -284,8 +268,7 @@ export const krishiMitra = {
   ],
 
   seo: {
-    title:
-      "Krishi Mitra - AI Powered Agricultural Assistant",
+    title: "Krishi Mitra - AI Powered Agricultural Assistant",
 
     description:
       "An intelligent farming assistant providing crop recommendations, disease detection, weather intelligence, market insights, and government scheme guidance.",
