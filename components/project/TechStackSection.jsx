@@ -30,32 +30,6 @@ export default function TechStackSection({ project }) {
           </p>
         </div>
 
-        {/* Tech Stack Grid */}
-        <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {Object.entries(categorizedTech).map(([category, techs]) => (
-            <div
-              key={category}
-              className="rounded-[28px] border border-zinc-800 bg-zinc-950/50 p-8 backdrop-blur-xl"
-            >
-              <h3 className="text-lg font-bold text-blue-300 mb-6">
-                {category}
-              </h3>
-
-              <ul className="space-y-4">
-                {techs.map((tech) => (
-                  <li
-                    key={tech}
-                    className="flex items-center gap-3 text-zinc-300"
-                  >
-                    <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
-                    {tech}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-
         {/* Full Tech Stack List */}
         <div className="mt-16 rounded-[32px] border border-zinc-800 bg-zinc-950/50 backdrop-blur-xl p-12">
           <h3 className="text-2xl font-bold text-white mb-8">Complete Stack</h3>
