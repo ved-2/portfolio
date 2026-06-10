@@ -58,47 +58,7 @@ export default function ChallengesSection({ project }) {
           })}
         </div>
 
-        {/* Key Takeaways */}
-        <div className="mt-16 rounded-[32px] border border-zinc-800 bg-gradient-to-br from-orange-500/5 to-transparent backdrop-blur-xl p-12">
-          <h3 className="text-2xl font-bold text-white mb-8">
-            What We Learned
-          </h3>
-
-          <ul className="space-y-4">
-            <li className="flex items-start gap-4">
-              <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-orange-500/10 text-orange-400 font-bold text-sm">
-                1
-              </span>
-
-              <p className="text-zinc-300 leading-relaxed pt-1">
-                Real-time systems require careful attention to latency, state
-                management, and consistency across distributed components.
-              </p>
-            </li>
-
-            <li className="flex items-start gap-4">
-              <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-orange-500/10 text-orange-400 font-bold text-sm">
-                2
-              </span>
-
-              <p className="text-zinc-300 leading-relaxed pt-1">
-                User experience in critical scenarios demands intuitive
-                interfaces and robust error handling mechanisms.
-              </p>
-            </li>
-
-            <li className="flex items-start gap-4">
-              <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-orange-500/10 text-orange-400 font-bold text-sm">
-                3
-              </span>
-
-              <p className="text-zinc-300 leading-relaxed pt-1">
-                Scalability isn't an afterthought—it must be built into the
-                architecture from the ground up.
-              </p>
-            </li>
-          </ul>
-        </div>
+        
       </div>
     </section>
   );

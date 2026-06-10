@@ -22,6 +22,7 @@
     "ogl": "^1.0.11",
     "postprocessing": "^6.39.1",
     "qss": "^3.0.0",
+    "radix-ui": "^1.5.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-github-calendar": "^5.0.6",

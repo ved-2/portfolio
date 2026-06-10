@@ -6,24 +6,6 @@ import { PinContainer } from "./ui/3d-pin";
 
 const projects = [
   {
-    title: "HostelNest",
-    emoji: "🏠",
-    category: "PropTech",
-    description:
-      "AI-powered student accommodation platform with roommate matching and smart property discovery.",
-    href: "/projects/hostelnest",
-    gradient: "from-orange-500 via-red-500 to-pink-500",
-  },
-  {
-    title: "Krishi Mitra",
-    emoji: "🌾",
-    category: "AgriTech",
-    description:
-      "AI farming companion offering crop advisory, pest detection, and market intelligence.",
-    href: "/projects/krishi-mitra",
-    gradient: "from-green-500 via-emerald-500 to-lime-500",
-  },
-  {
     title: "HospiConnect",
     emoji: "🚑",
     category: "HealthTech",
@@ -42,15 +24,6 @@ const projects = [
     gradient: "from-cyan-500 via-blue-500 to-indigo-500",
   },
   {
-    title: "DPRConnect",
-    emoji: "🏛️",
-    category: "GovTech",
-    description:
-      "AI-powered DPR assessment and project risk prediction system for smarter governance.",
-    href: "/projects/dprconnect",
-    gradient: "from-purple-500 via-violet-500 to-indigo-500",
-  },
-  {
     title: "Algo Animate",
     emoji: "🎯",
     category: "EdTech",
@@ -58,6 +31,33 @@ const projects = [
       "AI-powered DSA learning platform with optimized solutions and visual explanations.",
     href: "/projects/algo-animate",
     gradient: "from-yellow-500 via-orange-500 to-red-500",
+  },
+  {
+    title: "LinkedIn Post Generator AI Agent",
+    emoji: "✍️",
+    category: "Generative AI",
+    description:
+      "Multi-agent AI system that generates, evaluates, and optimizes LinkedIn posts using human feedback loops.",
+    href: "/projects/linkedin-post-generator-ai-agent",
+    gradient: "from-blue-600 via-sky-500 to-cyan-500",
+  },
+  {
+    title: "LangGraph Persistent Chatbot",
+    emoji: "🤖",
+    category: "AI Agents",
+    description:
+      "Production-ready AI chatbot with persistent memory, multi-chat support, and resume conversation functionality.",
+    href: "/projects/langgraph-persistent-chatbot",
+    gradient: "from-indigo-600 via-violet-500 to-purple-500",
+  },
+  {
+    title: "YouTube RAG Chatbot",
+    emoji: "🎥",
+    category: "Generative AI",
+    description:
+      "Ask questions about YouTube videos using transcript-based retrieval and AI-powered answer generation.",
+    href: "/projects/youtube-rag-chatbot",
+    gradient: "from-red-600 via-pink-500 to-fuchsia-500",
   },
 ];
 

@@ -93,20 +93,6 @@ export default function Footer() {
             <div className="space-y-3 text-zinc-400">
               <div className="space-y-2">
                 <Link
-                  href="/projects/hostelnest"
-                  className="block hover:text-orange-400 transition"
-                >
-                  🏠 HostelNest
-                </Link>
-
-                <Link
-                  href="/projects/krishi-mitra"
-                  className="block hover:text-green-400 transition"
-                >
-                  🌾 Krishi Mitra
-                </Link>
-
-                <Link
                   href="/projects/hospiconnect"
                   className="block hover:text-red-400 transition"
                 >
@@ -121,17 +107,31 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                  href="/projects/dprconnect"
-                  className="block hover:text-violet-400 transition"
-                >
-                  🏛️ DPRConnect
-                </Link>
-
-                <Link
                   href="/projects/algo-animate"
                   className="block hover:text-yellow-400 transition"
                 >
                   🎯 Algo Animate
+                </Link>
+
+                <Link
+                  href="/projects/linkedin-post-generator-ai-agent"
+                  className="block hover:text-sky-400 transition"
+                >
+                  ✍️ LinkedIn Post Generator AI Agent
+                </Link>
+
+                <Link
+                  href="/projects/langgraph-persistent-chatbot"
+                  className="block hover:text-violet-400 transition"
+                >
+                  🤖 LangGraph Persistent Chatbot
+                </Link>
+
+                <Link
+                  href="/projects/youtube-rag-chatbot"
+                  className="block hover:text-pink-400 transition"
+                >
+                  🎥 YouTube RAG Chatbot
                 </Link>
               </div>
             </div>

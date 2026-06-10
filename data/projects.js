@@ -10,6 +10,12 @@ import { movieBooking as movieBookingData } from "./projects/movie-booking";
 import { networkIntrusionDetection as networkIntrusionDetectionData } from "./projects/network-intrusion-detection";
 import { aurenixAI as aurenixAIData } from "./projects/aurenix-ai";
 
+// New AI Projects
+import { linkedinPostGeneratorAI as linkedinPostGeneratorAIData } from "./projects/linkedin-post-generator-ai-agent";
+import { langgraphPersistentChatbot as langgraphPersistentChatbotData } from "./projects/chatbot";
+import { youtubeRAGChatbot as youtubeRAGChatbotData } from "./projects/youtube-rag-chatbot";
+import { multimodalRAGSystem as multimodalRAGSystemData } from "./projects/multimodal-rag-system";
+
 // Gradient colors for each project
 const gradients = {
   hospiconnect: "from-red-500 via-pink-500 to-rose-500",
@@ -24,6 +30,16 @@ const gradients = {
   "movie-booking": "from-fuchsia-500 via-pink-500 to-rose-500",
   "network-intrusion-detection": "from-red-600 via-orange-500 to-yellow-500",
   "aurenix-ai": "from-violet-500 via-fuchsia-500 to-pink-500",
+
+  // New Projects
+  "linkedin-post-generator-ai-agent": "from-blue-600 via-sky-500 to-cyan-500",
+
+  "langgraph-persistent-chatbot":
+    "from-indigo-600 via-violet-500 to-purple-500",
+
+  "youtube-rag-chatbot": "from-red-600 via-pink-500 to-fuchsia-500",
+
+  "multimodal-rag-system": "from-emerald-500 via-teal-500 to-cyan-500",
 };
 
 // Emojis for each project
@@ -40,6 +56,12 @@ const emojis = {
   "movie-booking": "🎬",
   "network-intrusion-detection": "🔒",
   "aurenix-ai": "🚀",
+
+  // New Projects
+  "linkedin-post-generator-ai-agent": "✍️",
+  "langgraph-persistent-chatbot": "🤖",
+  "youtube-rag-chatbot": "🎥",
+  "multimodal-rag-system": "🧠",
 };
 
 // Normalize project data to match the expected structure
@@ -51,15 +73,19 @@ const normalizeProject = (projectData) => ({
   tagline: projectData.tagline,
   description: projectData.description,
   heroImage: projectData.heroImage,
+
   github:
     typeof projectData.github === "string"
       ? projectData.github
       : projectData.github?.ambulanceApp ||
         projectData.github?.frontend ||
         projectData.github?.web ||
+        projectData.github?.repository ||
         Object.values(projectData.github)[0] ||
         "#",
+
   demo: projectData.liveDemo || "#",
+
   gradient:
     gradients[projectData.slug] ||
     "from-violet-500 via-purple-500 to-indigo-500",
@@ -84,34 +110,35 @@ const normalizeProject = (projectData) => ({
       ? projectData.techStack
       : [],
 
-  // Map features to match expected structure
+  // Map features
   features:
     projectData.features?.map((f) => ({
       title: f.title,
       description: f.description,
     })) || [],
 
-  // Map architecture flow
+  // Architecture Flow
   architecture: projectData.architecture?.flow || [],
 
-  // Map challenges
+  // Challenges
   challenges: projectData.challengesFaced?.map((c) => c.title) || [],
 
-  // Map impact points - only for hospiconnect
+  // Impact
   impact:
     projectData.slug === "hospiconnect"
       ? projectData.achievements?.map((a) => `${a.title} — ${a.event}`) || []
       : [],
 
-  // Add screenshots
+  // Screenshots
   screenshots: projectData.gallery || [],
 
-  // Add problem and solution for sections
+  // Problem Section
   problem: {
     title: projectData.problem?.title || "The Problem",
     description: projectData.problem?.description || "",
   },
 
+  // Solution Section
   solution: {
     title: projectData.solution?.title || "The Solution",
     description: projectData.solution?.description || "",
@@ -121,6 +148,13 @@ const normalizeProject = (projectData) => ({
 export const projects = [
   normalizeProject(aurenixAIData),
 
+  // AI / GenAI Projects
+  normalizeProject(linkedinPostGeneratorAIData),
+  normalizeProject(langgraphPersistentChatbotData),
+  normalizeProject(youtubeRAGChatbotData),
+  normalizeProject(multimodalRAGSystemData),
+
+  // Existing Projects
   normalizeProject(hospiconnectData),
   normalizeProject(hostelnestData),
   normalizeProject(krishiMitraData),

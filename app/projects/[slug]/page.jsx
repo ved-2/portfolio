@@ -30,8 +30,6 @@ export default function ProjectPage({ params }) {
       <ArchitectureSection project={project} />
       <TechStackSection project={project} />
       <ChallengesSection project={project} />
-      <ScreenshotsSection project={project} />
-      <ImpactSection project={project} />
     </main>
   );
 }

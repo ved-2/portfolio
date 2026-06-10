@@ -43,55 +43,7 @@ export default function SolutionSection({ project }) {
         </div>
 
         {/* Solution Pillars */}
-        <div className="mt-10 grid lg:grid-cols-3 gap-6">
-          {/* Pillar 1 */}
-          <div className="rounded-[28px] border border-zinc-800 bg-zinc-950/50 p-8 backdrop-blur-xl">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10">
-              <Zap className="text-emerald-400" />
-            </div>
-
-            <h3 className="mt-6 text-xl font-bold text-white">
-              Real-time Coordination
-            </h3>
-
-            <p className="mt-4 text-zinc-400 leading-relaxed">
-              Instant communication and live tracking capabilities enable
-              seamless coordination across all stakeholders.
-            </p>
-          </div>
-
-          {/* Pillar 2 */}
-          <div className="rounded-[28px] border border-zinc-800 bg-zinc-950/50 p-8 backdrop-blur-xl">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/10">
-              <Lightbulb className="text-cyan-400" />
-            </div>
-
-            <h3 className="mt-6 text-xl font-bold text-white">
-              AI-Powered Intelligence
-            </h3>
-
-            <p className="mt-4 text-zinc-400 leading-relaxed">
-              Machine learning algorithms optimize decisions and provide
-              intelligent recommendations tailored to each situation.
-            </p>
-          </div>
-
-          {/* Pillar 3 */}
-          <div className="rounded-[28px] border border-zinc-800 bg-zinc-950/50 p-8 backdrop-blur-xl">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-violet-500/10">
-              <Shield className="text-violet-400" />
-            </div>
-
-            <h3 className="mt-6 text-xl font-bold text-white">
-              Reliability & Security
-            </h3>
-
-            <p className="mt-4 text-zinc-400 leading-relaxed">
-              Enterprise-grade infrastructure ensures 24/7 availability and data
-              protection at the highest standards.
-            </p>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

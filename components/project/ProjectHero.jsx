@@ -68,74 +68,8 @@ export default function ProjectHero({ project }) {
                 <Github size={18} />
                 Source Code
               </a>
-
-              <a
-                href={project.demo}
-                target="_blank"
-                className="
-                  flex items-center gap-2
-                  rounded-xl
-                  bg-white
-                  px-6 py-4
-                  text-black
-                  font-medium
-                  transition-all
-                  hover:scale-105
-                "
-              >
-                Live Demo
-                <ArrowUpRight size={18} />
-              </a>
             </div>
 
-            {/* Stats */}
-            <div className="mt-16 grid grid-cols-3 gap-8">
-              <div>
-                <h3 className="text-3xl font-bold text-white">AI</h3>
-
-                <p className="text-sm text-zinc-500 mt-2">Powered Features</p>
-              </div>
-
-              <div>
-                <h3 className="text-3xl font-bold text-white">Full Stack</h3>
-
-                <p className="text-sm text-zinc-500 mt-2">Architecture</p>
-              </div>
-
-              <div>
-                <h3 className="text-3xl font-bold text-white">Impact</h3>
-
-                <p className="text-sm text-zinc-500 mt-2">Real World Problem</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Right */}
-          <div className="relative">
-            {/* Glow */}
-            <div className="absolute inset-0 rounded-[32px] bg-gradient-to-r from-violet-600/20 via-cyan-500/10 to-purple-500/20 blur-3xl" />
-
-            {/* Image */}
-            <div
-              className="
-                relative
-                overflow-hidden
-                rounded-[32px]
-                border border-zinc-800
-                bg-zinc-950
-                backdrop-blur-xl
-              "
-            >
-              <img
-                src={project.heroImage}
-                alt={project.title}
-                className="
-                  h-[500px]
-                  w-full
-                  object-cover
-                "
-              />
-            </div>
           </div>
         </div>
       </div>
